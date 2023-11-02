@@ -1,9 +1,7 @@
 <script setup>
 import Category from './components/Category.vue';
 import Promotion from './components/Promotion.vue';
-// import Button from './components/Button.vue';
 import { ArrowLongRightIcon } from '@heroicons/vue/20/solid';
-import { ArrowLongLeftIcon } from '@heroicons/vue/20/solid';
 import img1 from './assets/cat-13 1.png'
 import img2 from './assets/cat-11 1.png'
 import img3 from './assets/cat-12 1.png'
@@ -91,16 +89,16 @@ const promotions = [
     bg: "bg-[#F0E8D5]",
     button: "Shop Now",
     bgButton :"bg-[#3BB77E]",
-    icon: ArrowLongRightIcon, // Include the icon component
+    icon: ArrowLongRightIcon, 
   },
   {
     name: 'Make your Breakfast Healthy and Easy',
-    imageUrl: img12,
+    imageUrl: 'https://s3-alpha-sig.figma.com/img/2738/f29f/1c4542246febe8c91ddb74ce42b81c5d?Expires=1699833600&Signature=JNM~Pf22QsnaqWM9RZvWG64rjJo-lwfl9CDQ92UKMr6C28gHlbdnOOztzCIiPSRH0g5qkVqbTgGQdrEMyPelGVWQddeCtybMyNUd65D4~cPXAB07xITVuyQVMRet1JACTy8dCeWb8T9iQmnqVt0YR2uHQWVulaiHJnCwld~CzjbFEs1IyFxhYvreRlGm2iD0vuqOAHgHTfEy0EIUnd1CjWkmc8EZtD4X2HlZsQ2~jLP4m~D6OfzE7ep1TEnDlV6DY-dV1rLk2K1XVxF13VbfgrM-Bpo10mw0Dsf2eLV-7UlbFfJhzRPEBW7ZKd23-YWQ-pglVOnpWEJtXuTNrvYUFA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4',
     description: '4 items',
     bg: "bg-[#F3E8E8]",
     button: "Shop Now",
     bgButton :"bg-[#3BB77E]",
-    icon: ArrowLongRightIcon, // Include the icon component
+    icon: ArrowLongRightIcon,
   },
   {
     name: 'The best Organic Products Online',
@@ -109,14 +107,14 @@ const promotions = [
     bg: "bg-[#E7EAF3]",
     button: "Shop Now",
     bgButton :"bg-[#FDC040]",
-    icon: ArrowLongRightIcon, // Include the icon component
+    icon: ArrowLongRightIcon, 
   },
 ];
 
 </script>
 
 <template>
-  <section class="flex flex-col gap-12 items-center justify-center h-screen bg-[#1e1e1e]">
+  <section class="flex flex-col gap-12 items-center justify-center h-screen">
     <div className="flex gap-4">
       <Category :class="fruit.bg" v-for="(fruit, index) in fruits" :key="index" :image="fruit.imageUrl" :name="fruit.name" :description="fruit.description" />
     </div>

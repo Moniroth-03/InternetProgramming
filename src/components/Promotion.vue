@@ -1,6 +1,5 @@
 <script>
 import Button from './Button.vue';
-// import { ArrowLongRightIcon } from '@heroicons/vue/20/solid';
 
 export default {
   name: "Promotion",
@@ -16,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <div class="flex justify-center h-[220px] items-center w-[320px] rounded-md shadow-md overflow-hidden">
+  <div class="flex justify-center h-[220px] items-center w-[470px]  rounded-md shadow-md overflow-hidden relative">
     <div class="flex flex-col m-auto flex-1 px-4 gap-4">
       <div class="flex items-center">
         <h3>{{ name }}</h3>
@@ -24,8 +23,8 @@ export default {
       <Button :background="bgButton" :text="buttonText" :iconComponent="icon" />
     </div>
 
-    <div class="relative h-full w-1/2 overflow-visible">
-      <img class="h-full absolute w-full object-cover top-5 bottom-5" :src="imageUrl" :alt="name" />
+    <div class=" h-full w-1/2">
+      <img class="h-full w-full object-contain -right-20 bottom-0" :src="imageUrl" :alt="name" />
     </div>
   </div>
 </template>

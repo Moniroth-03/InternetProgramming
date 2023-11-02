@@ -1,5 +1,5 @@
 <template>
-  <button :class="background+ ` flex gap-2 text-xs text-white justify-center items-center rounded-md w-48rem p-2`">
+  <button :class="background+ ` flex gap-2 text-xs text-white justify-center items-center rounded-md w-1/2 p-2`">
     {{ text }}
     <component :is="iconComponent" class="icon w-4 h-4" />
   </button>
